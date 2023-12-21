@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h4 {
+  position: relative;
+}
+
+h4::after {
+  position: absolute;
+  content: 'A';
+  font-weight: bold;
+  height: 20px;
+  top: 4px;
+  right: 69px;
+  background-color: #075985;
+  padding-right: 6px;
+  padding: 2px 4px 4px 4px;
+  border-radius: 40%;
+
+}
+
+nav ul a {
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding-bottom: 4px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 60px;
+    
+  }
+  .None{
+    display: none;
+  }
+}

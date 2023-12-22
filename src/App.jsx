@@ -33,7 +33,7 @@ function App() {
               </ul>
             </nav>
             <div className="None  flex  mr-20">
-              <button className='bg-sky-700 p-1 text-sm translate-y-1 pb-3-3 rounded-sm'>contact me</button>
+              <button className='bg-sky-700 p-1 text-sm translate-y-1 pb-3-3 rounded-sm hover:bg-black border-l-blue-700'>contact me</button>
               <div className='translate-y-2 ml-5'>
                 <FaMoon />
               </div>

@@ -46,4 +46,19 @@ nav ul a {
   .None{
     display: none;
   }
+  .Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .icons{
+    position: fixed;
+    bottom: 20%;
+    right: 20px;
+  }
+  .footer{
+    display: none;
+  }
 }

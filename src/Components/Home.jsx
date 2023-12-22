@@ -1,42 +1,38 @@
-// import React from 'react'
-// import Data from './Dt'
-// import { FaInstagram, FaFacebook, FaLinkedinIn } from "react-icons/fa";
-
-
-// export default function Home() {
-//   const Profile = Data.map(item => {
-
-//     return (
-//       <div>
-//         <div>
-//           <FaInstagram />
-//           <FaFacebook />
-//           <FaLinkedinIn />
-//         </div>
-//         <div>
-//           <img src={item.Image} alt="" />
-//         </div>
-//         <div>
-//           <h3>{item.Greeting}</h3>
-//           <h5>{item.Name}</h5>
-//           <div className='Line'></div>
-//           <p>{item.Description}</p>
-//         </div>
-//       </div>
-//     )
-//   })
-//   return (
-//     <div>
-//       {Profile}
-//     </div>
-//   )
-
-// }
-import React from 'react'
+import React from 'react';
+import data from "./dt";
+import { FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa"
 
 export default function Home() {
+  const Users = data.map(item => {
+    return (
+      <div className='flex justify-centeri
+      r64 gap-5 h-50vh align-bottom' key={item.id}>
+        <div>
+          <FaFacebook />
+          <FaLinkedinIn />
+          <FaTwitter />
+        </div>
+        <div>
+          <img src={item.Image} alt={item.alt} className='w-96' />
+        </div>
+        <div>
+          <h2 >{item.Name}</h2>
+          <p dangerouslySetInnerHTML={{ __html: item.Description }} />
+
+        </div>
+      </div>
+    );
+  });
+
   return (
-    <div>Home</div>
-  )
+    <div>
+      {Users}
+    </div>
+  );
+
 }
+
+
+
+
 

@@ -6,6 +6,10 @@ body {
   background-color: black;
   color: white;
 }
+/* .white{
+  background-color: white;
+  color: black;
+} */
 
 h4 {
   position: relative;
@@ -28,6 +32,28 @@ h4::after {
 nav ul a {
   margin: 10px;
 }
+h2{
+  position: relative;
+}
+h2::before{
+   content: '|';
+   position: absolute;
+   right: 0;
+   background-color: black;
+   width: 0%;
+   animation: typing 3s steps(14) alternate  infinite;
+   
+}
+.FaBars:hover{
+  border: 2px solid #075985;
+  padding: 1px;
+}
+
+@keyframes typing{
+  to{
+    width: 90%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   nav {
@@ -41,8 +67,12 @@ nav ul a {
     margin-bottom: 30px;
     text-align: center;
     margin-right: 60px;
+    display: none;
     
   }
+  ul.open {
+    display: flex;
+ }
   .None{
     display: none;
   }
@@ -53,6 +83,15 @@ nav ul a {
     align-items: center;
     text-align: center;
   }
+  .TX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Font{
+    margin-left: 30px;
+  }
   .icons{
     position: fixed;
     bottom: 20%;
@@ -62,3 +101,4 @@ nav ul a {
     display: none;
   }
 }
+

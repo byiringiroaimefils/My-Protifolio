@@ -1,4 +1,5 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import './App.css'
 import Home from './Components/Home'
 import AboutMe from './Components/AboutMe'
@@ -9,24 +10,27 @@ import { FaMoon, FaBars } from "react-icons/fa";
 
 
 function App() {
+  const[bgcolor,Setbgcolor]=useState("black")
+  const [openLink, SetopenLink] = useState(false);
   return (
+
     <div>
-     <BrowserRouter>
-        <header className=" m-4 ml-8" >
+      <BrowserRouter>
+        <header className="m-4 ml-8" >
           <div className="flex justify-between ">
             <div className="logo ml-6 translate-y-1">
               <h4>aime9088</h4>
             </div>
 
-            <nav className="ml-9">
-              <ul>
-                <Link className="hover:text-sky-700 text-xs font-semibold " to="/">
+            <nav className="ml-9 transition-all duration-300">
+              <ul className={openLink ? "open" : ""} >
+                <Link className=" hover:text-sky-700 transition-colors duration-300 text-xs font-semibold " to="/">
                   HOME
                 </Link>
-                <Link className="hover:text-sky-700  text-xs font-semibold" to="AboutMe">
+                <Link className="hover:text-sky-700 transition-colors duration-300 text-xs font-semibold" to="AboutMe">
                   ABOUTME
                 </Link>
-                <Link className="hover:text-sky-700  text-xs font-semibold " to="Project">
+                <Link className="hover:text-sky-700 transition-colors duration-300 text-xs font-semibold " to="Project">
                   PROJECT
                 </Link>
 
@@ -35,21 +39,23 @@ function App() {
             <div className="None  flex  mr-20">
               <button className='bg-sky-700 p-1 text-sm translate-y-1 pb-3-3 rounded-sm hover:bg-black border-l-blue-700'>contact me</button>
               <div className='translate-y-2 ml-5'>
-                <FaMoon />
+                <FaMoon  className='cursor-pointer hover:text-sky-700' onClick={()=>{Setbgcolor ? "white":"black"}} />
               </div>
             </div>
-            <  FaBars className=" lg:hidden  mt-2 ml-6 white "/>
+            <  FaBars className="FaBars lg:hidden  mt-2 ml-6 white cursor-pointer" onClick={() => {
+              SetopenLink(!openLink);
+            }} />
           </div>
         </header>
 
         <main>
           <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="AboutMe" element={<AboutMe/>} />
+            <Route path="/" element={<Home />} />
+            <Route path="AboutMe" element={<AboutMe />} />
             <Route path="Project" element={<Project />} />
           </Routes>
         </main>
-      </BrowserRouter> 
+      </BrowserRouter>
     </div>
   );
 }

@@ -4,8 +4,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     // screens: {
-    //   'sm': '860px',
-    //   'slm':'856px'
+    //   'sm': '768px'
     // },
     extend: {},
   },

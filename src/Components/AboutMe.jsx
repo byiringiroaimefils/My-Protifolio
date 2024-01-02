@@ -13,15 +13,18 @@ export default function AboutMe() {
           <p className='text-sm font-thin '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam!</p>
         </div>
         <div className='TX  flex justify-center mt-32 gap-24'>
-          <div className='w-80'>
+          <div className='w-96'>
             <img src={terms.Image2} alt={terms.alt} className='Image' />
           </div>
-          <div className=' Font text-base '>
+          <div className='flex flex-col Font text-base '>
             <span className='text-lg font-bold hover:text-sky-700 transition-colors duration-300'>{terms.Greeting}</span>
             <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe }} />
-            <h6 className='font-semibold'><FaVoicemail/>  Email-Adress:aimefils173@gmail.com</h6>
-            <h6 className='font-semibold'><FaAddressBook/>Adress:Rubavu-Gisa</h6>
-            <h6 className='font-semibold'><FaPhone/>Contact:0790154696</h6> <br />
+            <FaVoicemail className='translate-y-5 text-sky-700'/> 
+            <h6 className='font-semibold translate-x-5 '>aimefils173@gmail.com</h6>
+            <FaAddressBook className='translate-y-5 text-sky-700'/>
+            <h6 className='font-semibold translate-x-5 '>Rubavu-Gisa</h6>
+            <FaPhone className='translate-y-5 text-sky-700'/>
+            <h6 className='font-semibold translate-x-5 '>0790154696</h6> <br />
             <label> Computer Language and Skills </label>
             <div className='flex'>
               <FaReact />
@@ -31,7 +34,7 @@ export default function AboutMe() {
               <FaReact />
               <FaReact />
             </div> <br />
-            <button className='bg-sky-700 rounded p-2 text-xs'>Dowmload CV</button>
+            <button className='Dowmload CV bg-sky-700 rounded p-2 text-xs'>Dowmload CV</button>
           </div>
         </div>
       </div>

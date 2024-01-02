@@ -30,9 +30,9 @@ export default function Home() {
     <div>
       {Users} <br /> <br /><br /><br /><br /> <br />
       <div className='footer flex justify-center gap-2'>
-        <div className='w-80 h-1 bg-sky-700 rounded'></div>
-        <div className='translate-y-[-14px] font-bold tracking-widest'><h3>Software Developer</h3></div>
-        <div className='w-80 h-1 bg-sky-700 rounded'></div>
+        {/* <div className='w-96 h-1 bg-sky-700 '></div> */}
+        <div className='translate-y-[-14px] font-bold tracking-widest pl-5 pr-5'><h3>Software Developer</h3></div>
+        {/* <div className='w-96 h-1 bg-sky-700 '></div> */}
       </div> <br /><br />
       <AboutMe/> <br />
       <div className="mt-32" >

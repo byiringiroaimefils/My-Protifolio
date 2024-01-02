@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: black;
   color: white;
 }
-/* .white{
-  background-color: white;
-  color: black;
-} */
+.Header{
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
 
 h4 {
   position: relative;
@@ -32,26 +37,47 @@ h4::after {
 nav ul a {
   margin: 10px;
 }
-h2{
+
+/* h2{
   position: relative;
+} */
+h2 {
+  letter-spacing: 1px;
+  font-weight: bolder;
+  text-align: center;
+  letter-spacing: 2px;
+  /* font-family: monospace; */
+  border-right: 5px solid;
+  width: 94%;
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(14) alternate  infinite;
 }
-h2::before{
-   content: '|';
-   position: absolute;
-   right: 0;
-   background-color: black;
-   width: 0%;
-   animation: typing 3s steps(14) alternate  infinite;
-   
-}
-.FaBars:hover{
+
+.FaBars:hover {
   border: 2px solid #075985;
   padding: 1px;
 }
+button:hover{
+ border: 2px solid #075985;
+ background-color: transparent;
+}
+.button:hover{
+  border: 2px solid #075985;
+  background-color: transparent;
+ }
 
-@keyframes typing{
-  to{
-    width: 90%;
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+@keyframes typing {
+  to {
+    width: 0;
   }
 }
 
@@ -68,37 +94,58 @@ h2::before{
     text-align: center;
     margin-right: 60px;
     display: none;
-    
+
   }
+
   ul.open {
     display: flex;
- }
-  .None{
+  }
+
+  .None {
     display: none;
   }
-  .Container{
+
+  .Container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .TX{
+
+  .TX {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .Font{
+
+  .Font {
     margin-left: 30px;
   }
-  .icons{
+
+  .icons {
     position: fixed;
     bottom: 20%;
     right: 20px;
   }
-  .footer{
+  .Dowmload{
+    margin-right: 15px;
+  }
+  
+  .footer {
     display: none;
   }
-}
 
+  .containers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .container img{
+    
+    width: 100%;
+  } 
+}

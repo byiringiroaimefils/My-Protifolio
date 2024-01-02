@@ -16,13 +16,13 @@ function App() {
 
     <div>
       <BrowserRouter>
-        <header className="m-4 ml-8" >
-          <div className="flex justify-between ">
-            <div className="logo ml-6 translate-y-1">
+        <header className="Header h-12 sticky top-0" >
+          <div className="flex justify-between ml-8 ">
+            <div className="logo ml-6 translate-y-4  translate-x-2">
               <h4>aime9088</h4>
             </div>
 
-            <nav className="ml-9 transition-all duration-300">
+            <nav className="ml-9 translate-y-2  translate-x-2 transition-all duration-300">
               <ul className={openLink ? "open" : ""} >
                 <Link className=" hover:text-sky-700 transition-colors duration-300 text-xs font-semibold " to="/">
                   HOME
@@ -37,12 +37,12 @@ function App() {
               </ul>
             </nav>
             <div className="None  flex  mr-20">
-              <button className='bg-sky-700 p-1 text-sm translate-y-1 pb-3-3 rounded-sm hover:bg-black border-l-blue-700'>contact me</button>
-              <div className='translate-y-2 ml-5'>
+              <button className='button bg-sky-700 p-1 text-sm translate-y-3 pb-3-3 rounded-sm'>Contact me</button>
+              <div className='translate-y-4 ml-5'>
                 <FaMoon  className='cursor-pointer hover:text-sky-700' onClick={()=>{Setbgcolor ? "white":"black"}} />
               </div>
             </div>
-            <  FaBars className="FaBars lg:hidden  mt-2 ml-6 white cursor-pointer" onClick={() => {
+            <  FaBars className="FaBars lg:hidden  mt-3 ml-6 mr-7 white cursor-pointer" onClick={() => {
               SetopenLink(!openLink);
             }} />
           </div>

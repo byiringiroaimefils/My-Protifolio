@@ -1,11 +1,11 @@
 import React from 'react'
-import Dt from './Dt'
+import Datas from '../Components/AboutmeData'
 import { FaVoicemail, FaAddressBook, FaPhone, FaReact } from "react-icons/fa"
 
 
 
 export default function AboutMe() {
-  const Data = Dt.map(terms => {
+  const Data = Datas.map(terms => {
     return (
       <div key={terms.id}>
         <div className='text-center'>

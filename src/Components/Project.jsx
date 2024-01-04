@@ -1,4 +1,4 @@
-import Photo from "../assets/Kirclinic.PNG";
+import Photo from "../assets/Kirclinic.png";
 import Photo1 from "../assets/Nike.png";
 import Photo2 from "../assets/Profile.png";
 import React from 'react'

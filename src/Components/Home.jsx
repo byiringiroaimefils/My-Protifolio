@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import data from "./dt";
+import data from "./Dt";
 import AboutMe from './AboutMe'
 import Project from './Project'
 import { FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa"

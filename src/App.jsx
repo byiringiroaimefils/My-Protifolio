@@ -1,20 +1,33 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css'
 import Home from './Components/Home'
 import AboutMe from './Components/AboutMe'
 import Project from './Components/Project'
-import Contct from './Components/Contct'
+import Contct from './Components/Contact'
 
-import { FaMoon, FaBars } from "react-icons/fa";
-
+import { FaSun, FaBars } from "react-icons/fa";
 
 
 function App() {
-  const [bgcolor, Setbgcolor] = useState("black")
   const [openLink, SetopenLink] = useState(false);
-  return (
+  const [bgcolor, Setbgcolor] = useState("Light");
 
+  
+  useEffect(() => {
+    if (bgcolor === "Dark") {
+      document.body.classList.add("Dark")
+    }
+    else {
+      document.body.classList.remove("Dark")
+    }
+  }, [bgcolor]);
+
+  const handlethemeswitch = () => {
+    Setbgcolor(bgcolor === "Dark" ? "Light" : "Dark")
+
+  }
+  return (
     <div>
       <BrowserRouter>
         <header className="Header sticky top-0" >
@@ -23,7 +36,7 @@ function App() {
               <h4>aime9088</h4>
             </div>
 
-            <nav className="ml-9 translate-y-2  translate-x-2 transition-all duration-300">
+            <nav className="ml-9  translate-x-2 transition-all duration-300">
               <ul className={openLink ? "open" : ""} >
                 <Link className=" hover:text-sky-700 transition-colors duration-300 text-xs font-semibold " to="/">
                   HOME
@@ -39,10 +52,10 @@ function App() {
             </nav>
             <div className="None  flex  mr-20">
               <Link to="Contct">
-                <button className='button bg-sky-700 p-1 text-sm translate-y-3 pb-3-3 rounded-sm'>Contact me</button>
+                <button className='button bg-sky-700 px-0.5 text-sm  rounded-sm font-extrabold dark:text-white dark:hover:text-black'>Contact me</button>
               </Link>
-              <div className='translate-y-4 ml-5'>
-                <FaMoon className='cursor-pointer hover:text-sky-700' onClick={() => { Setbgcolor ? "white" : "black" }} />
+              <div className='translate-y-1 ml-5'>
+                <FaSun className='cursor-pointer hover:text-sky-700' onClick={handlethemeswitch}  />
               </div>
             </div>
             <  FaBars className="FaBars lg:hidden  mt-3 ml-6 mr-7 white cursor-pointer" onClick={() => {

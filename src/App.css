@@ -1,0 +1,14 @@
+
+.animation1{
+    animation: content2 2s ease-in;
+
+}
+@keyframes content2{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translatex(0px);
+    }
+  }

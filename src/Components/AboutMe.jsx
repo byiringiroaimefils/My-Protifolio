@@ -2,7 +2,7 @@ import React from 'react'
 import Datas from '../Components/AboutmeData'
 import { FaVoicemail, FaAddressBook, FaPhone, FaReact } from "react-icons/fa"
 
-
+const pdf=''
 
 export default function AboutMe() {
   const Data = Datas.map(terms => {
@@ -12,11 +12,11 @@ export default function AboutMe() {
           <h3 className='hover:text-sky-700 transition-colors duration-300 text-lg font-semibold' >ABOUTME</h3>
           <p className='text-sm font-thin '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam!</p>
         </div>
-        <div className='TX  flex justify-center mt-32 gap-24'>
-          <div className='w-96'>
+        <div className='centered-container flex justify-center mt-32 gap-24'>
+          <div className='animation1 w-96'>
             <img src={terms.Image2} alt={terms.alt} className='Image' />
           </div>
-          <div className='flex flex-col Font text-base '>
+          <div className='animation1 flex  flex-col Font text-base '>
             <span className='text-lg font-bold hover:text-sky-700 transition-colors duration-300'>{terms.Greeting}</span>
             <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe }} />
             <FaVoicemail className='translate-y-5 text-sky-700'/> 

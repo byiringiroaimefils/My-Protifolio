@@ -10,9 +10,9 @@ export default function Home() {
     return (
       <div className='Container flex justify-between h-50vh mt-36' key={item.id}>
         <div className=' icons ml-12 translate-y-28'>
-          <FaFacebook className='m-2 hover:text-sky-700 transition-colors duration-300'  />
-          <FaLinkedinIn className='m-2 hover:text-sky-700 transition-colors duration-300' />
-          <FaTwitter className='m-2 hover:text-sky-700 transition-colors duration-300' />
+          <a href="https://web.facebook.com/byiringiro.aimefils">  <FaFacebook className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
+          <a href="https://www.linkedin.com/in/byiringiro-aime-fils-281609296/">  <FaLinkedinIn className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
+          <a href="https://linkbio.co/byiringiroaimefils"> <FaTwitter className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
         </div>
         <div className='animation1'>
           <img src={item.Image} alt={item.alt} className='w-96' />
@@ -32,15 +32,15 @@ export default function Home() {
       {Users} <br /> <br /><br /><br /><br /> <br />
       <div className='footer flex justify-center gap-2'>
         {/* <div className='w-96 h-1 bg-sky-700 '></div> */}
-        <div className='translate-y-[-14px] font-bold tracking-widest pl-5 pr-5 font-mono'><h3>Software Developer</h3></div>
+        {/* <div className='translate-y-[-14px] font-bold tracking-widest pl-5 pr-5 font-mono'><h3>Software Developer</h3></div> */}
         {/* <div className='w-96 h-1 bg-sky-700 '></div> */}
       </div> <br /><br />
-      <AboutMe/> <br />
+      <AboutMe /> <br />
       <div className="mt-32" >
-      <Project />
+        <Project />
       </div>
       <div className="mt-32 mb-7" >
-      <Contactme />
+        <Contactme />
       </div>
     </div>
   );

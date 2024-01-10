@@ -2,6 +2,7 @@ import Photo from "../assets/Kirclinic.png";
 import Photo1 from "../assets/Nike.png";
 import Photo2 from "../assets/Profile.png";
 import Photo3 from "../assets/age.png";
+import Photo4 from "../assets/flower.png";
 import React from 'react'
 import { FaGithub } from "react-icons/fa6";
 
@@ -62,11 +63,11 @@ export default function Project() {
         </div>
 
         <div className='container fit w-96 p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300'>
-          <img src={Photo} alt="" className="w-96" />
-          <label className="font-bold">Kira Clinic</label>
+          <img src={Photo4} alt="" className="w-96" />
+          <label className="font-bold">History of Flower Collection</label>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <h6>Computer Language</h6>
-          <p className="text-sm font-extrabold">HTML , CSS ,JS</p><br />
+          <p className="text-sm font-extrabold">HTML,CSS ,JS,Php, and MySQL</p><br />
           <div className="flex gap-2 ">
             <a href="">Viewed and Available</a>
             <FaGithub className="translate-y-1" />

@@ -70,6 +70,12 @@ button:hover{
   border: 2px solid #075985;
 
  }
+form .input {
+  border: 2px solid #075985;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 5px;
+}
 
 @keyframes cursor {
   50% {

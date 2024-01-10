@@ -1,6 +1,6 @@
 import React from 'react'
 import Datas from '../Components/AboutmeData'
-import { FaVoicemail, FaAddressBook, FaPhone, FaReact } from "react-icons/fa"
+import { FaEnvelope, FaAddressBook, FaPhone, FaReact } from "react-icons/fa"
 
 const pdf=''
 
@@ -10,29 +10,35 @@ export default function AboutMe() {
       <div key={terms.id}>
         <div className='text-center'>
           <h3 className='hover:text-sky-700 transition-colors duration-300 text-lg font-semibold' >ABOUTME</h3>
-          <p className='text-sm font-thin '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam!</p>
+          <p className='text-sm font-thin '>My life depends on coding ,Programing and being updates on new Version.</p>
         </div>
         <div className='centered-container flex justify-center mt-32 gap-24'>
           <div className='animation1 w-96'>
             <img src={terms.Image2} alt={terms.alt} className='Image' />
           </div>
-          <div className='animation1 flex  flex-col Font text-base '>
+          <div className='animation1 flex  flex-col Font text-base'>
             <span className='text-lg font-bold hover:text-sky-700 transition-colors duration-300'>{terms.Greeting}</span>
             <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe }} />
-            <FaVoicemail className='translate-y-5 text-sky-700'/> 
-            <h6 className='font-semibold translate-x-5 '>aimefils173@gmail.com</h6>
+            <FaEnvelope className='translate-y-5 text-sky-700'/> 
+            <label className='font-semibold translate-x-5 '>aimefils173@gmail.com</label>
             <FaAddressBook className='translate-y-5 text-sky-700'/>
-            <h6 className='font-semibold translate-x-5 '>Rubavu-Gisa</h6>
+            <label className='font-semibold translate-x-5 '>Rubavu-Gisa</label>
             <FaPhone className='translate-y-5 text-sky-700'/>
-            <h6 className='font-semibold translate-x-5 '>0790154696</h6> <br />
+            <label className='font-semibold translate-x-5 '>0790154696</label>
             <label> Computer Language and Skills </label>
             <div className='flex'>
-              <FaReact />
-              <FaReact />
-              <FaReact />
-              <FaReact />
-              <FaReact />
-              <FaReact />
+            <img src={terms.html} alt='' className='w-5 m-2' />
+            <img src={terms.css} alt='' className='w-5 m-2' />
+            <img src={terms.tailwind} alt='' className='w-5 m-2 ' />
+            <img src={terms.javascritp} alt='' className='w-5 m-2'  />
+            <img src={terms.Node} alt='' className='w-5 m-2'  />
+            <img src={terms.php} alt='' className='w-5 m-2'  />
+            <img src={terms.mysqli} alt='' className='w-5 m-2'  />
+            <img src={terms.react} alt='' className='w-5 m-2'  />
+            <img src={terms.figma} alt='' className='w-5 m-2'  />
+            <img src={terms.Photoshop} alt='' className='w-5 m-2'  />
+            <img src={terms.Illust} alt='' className='w-5 m-2'  />
+            <img src={terms.version} alt='' className='w-5 m-2'  />
             </div> <br />
             <button className='Dowmload CV bg-sky-700 rounded p-2 text-xs'>Dowmload CV</button>
           </div>

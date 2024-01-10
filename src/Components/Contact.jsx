@@ -7,19 +7,22 @@ export default function Contct() {
     <div className='CONTACTME'>
       <div className='text-center pt-5'>
         <h3 className='hover:text-sky-700 transition-colors duration-300 text-lg font-semibold ' >CONTACT ME</h3>
+        <p className='text-sm font-thin '>My life depends on coding ,Programing and being updates on new Version.</p>
       </div>
 
       <div className='centered-container flex justify-center order-2  mt-8 gap-20  '>
         <div className='animation1'>
           <h3 className=' font-extrabold'>Get  In Touch</h3>
-          <p className='text-sm'>I'm here for you! How can I help you.</p> <br />
-          <label htmlFor="">Username</label><br />
-          <input type="text" className='w-96 h-8 bg-gray-400 outline-sky-700' /> <br />
-          <label htmlFor="">Email</label><br />
-          <input type="email" className='w-96 h-8  bg-gray-400 outline-sky-700' /> <br />
-          <label htmlFor="">Message</label>  <br />
-          <textarea name="" id="" cols="30" rows="10" className='w-96  bg-gray-400 outline-sky-900'></textarea> <br />
+         <p className='text-sm'>I'm here for you! How can I help you.</p> <br />
+         <form action="">
+          <label htmlFor="">USERNAME</label><br />
+          <input type="text" placeholder='Ex: aimefils' className='input  w-96 h-8 bg-black outline-none' /> <br />
+          <label htmlFor="">EMAIL</label><br />
+          <input type="email" placeholder='email@gmail.com' className='input  w-96 h-8  bg-black outline-none' /> <br />
+          <label htmlFor="">MESSAGE</label>  <br />
+          <textarea name="" id=""  placeholder='Message'  cols="30" rows="10" className='input w-96   bg-black outline-sky-900'></textarea> <br />
           <button className='Dowmload CV bg-sky-700 rounded p-1 text-xs w-96 h-8'>Submit</button>
+         </form>
         </div>
         <br />
         <div className='animation1 mt-16'>
@@ -30,7 +33,8 @@ export default function Contct() {
             <FaInstagram className='w-16 animate-bounce hover:text-sky-700' />
             <FaTwitter className='w-16 animate-bounce hover:text-sky-700' />
             <FaLinkedinIn className='w-16 animate-bounce hover:text-sky-700' />
-          </div>
+          </div><br />
+          <p className='text-center'> BYIRINGIRO Aime Fils</p>
         </div>
       </div>
     </div>

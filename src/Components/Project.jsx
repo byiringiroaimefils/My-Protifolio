@@ -74,7 +74,7 @@ export default function Project() {
           </div>
         </div>
 
-        <div className='container fit w-96 p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300'>
+        {/* <div className='container fit w-96 p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300'>
           <img src={Photo} alt="" className="w-96" />
           <label className="font-bold">Kira Clinic</label>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
@@ -84,7 +84,7 @@ export default function Project() {
             <a href="">Viewed and Available</a>
             <FaGithub className="translate-y-1" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

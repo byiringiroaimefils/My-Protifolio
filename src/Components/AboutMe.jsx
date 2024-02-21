@@ -1,22 +1,31 @@
-import React from 'react'
+// import React from 'react'
 import Datas from '../Components/AboutmeData'
-import { FaEnvelope, FaAddressBook, FaPhone, FaReact } from "react-icons/fa"
-
-const pdf=''
+import { FaEnvelope, FaAddressBook, FaPhone} from "react-icons/fa"
+import {useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export default function AboutMe() {
+  useEffect(() => {
+    Aos.init({duration:2000})
+  })
   const Data = Datas.map(terms => {
     return (
       <div key={terms.id}>
+
         <div className='text-center'>
           <h3 className='hover:text-sky-700 transition-colors duration-300 text-lg font-semibold' >ABOUTME</h3>
           <p className='text-sm font-thin '>My life depends on coding ,Programing and being updates on new Version.</p>
         </div>
+
         <div className='centered-container flex justify-center mt-32 gap-24'>
-          <div className='animation1 w-96'>
+
+          <div className='animation1 w-96'  data-aos="fade-right">
             <img src={terms.Image2} alt={terms.alt} className='Image' />
           </div>
-          <div className='animation1 flex  flex-col Font text-base'>
+
+
+          <div className='animation1 flex  flex-col Font text-base' data-aos="fade-left" >
             <span className='text-lg font-bold hover:text-sky-700 transition-colors duration-300'>{terms.Greeting}</span>
             <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe }} />
             <FaEnvelope className='translate-y-5 text-sky-700'/> 

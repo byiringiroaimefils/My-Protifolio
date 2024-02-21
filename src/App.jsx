@@ -4,6 +4,7 @@ import './App.css'
 import Home from './Components/Home'
 import AboutMe from './Components/AboutMe'
 import Project from './Components/Project'
+import Achivement from './Components/Achivement'
 import Contct from './Components/Contact'
 
 import { FaSun, FaBars } from "react-icons/fa";
@@ -13,7 +14,7 @@ function App() {
   const [openLink, SetopenLink] = useState(false);
   const [bgcolor, Setbgcolor] = useState("Light");
 
-  
+
   useEffect(() => {
     if (bgcolor === "Dark") {
       document.body.classList.add("Dark")
@@ -33,7 +34,9 @@ function App() {
         <header className="Header sticky top-0" >
           <div className="flex justify-between ml-8 ">
             <div className="logo ml-6 translate-y-4  translate-x-2">
-              <h4>aime9088</h4>
+              <Link to="/">
+                <h4>aime9088</h4>
+              </Link>
             </div>
 
             <nav className="ml-9  translate-x-2 transition-all duration-300">
@@ -47,15 +50,18 @@ function App() {
                 <Link className="hover:text-sky-700 transition-colors duration-300 text-xs font-semibold " to="Project">
                   PROJECT
                 </Link>
+                <Link className="hover:text-sky-700 transition-colors duration-300 text-xs font-semibold " to="Achivement">
+                  ACHIVEMENT
+                </Link>
 
               </ul>
             </nav>
             <div className="None  flex  mr-20">
               <Link to="Contct">
-                <button className='button bg-sky-700 px-0.5 text-sm  rounded-sm font-extrabold dark:text-white dark:hover:text-black'>Contact me</button>
+                <button className='buttons  p-1 text-sm  rounded-lg font-extrabold '>Contact me</button>
               </Link>
               <div className='translate-y-1 ml-5'>
-                <FaSun className='cursor-pointer hover:text-sky-700' onClick={handlethemeswitch}  />
+                <FaSun className='cursor-pointer hover:text-sky-700' onClick={handlethemeswitch} />
               </div>
             </div>
             <  FaBars className="FaBars lg:hidden  mt-3 ml-6 mr-7 white cursor-pointer" onClick={() => {
@@ -70,6 +76,7 @@ function App() {
             <Route path="AboutMe" element={<AboutMe />} />
             <Route path="Project" element={<Project />} />
             <Route path="Contct" element={<Contct />} />
+            <Route path="Achivement" element={<Achivement />} />
           </Routes>
         </main>
       </BrowserRouter>

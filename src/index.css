@@ -63,12 +63,21 @@ button:hover{
  background-color: transparent;
 }
 .button:hover{
-  border: 1px solid #075985;
+  border: 2px solid #075985;
   background-color: transparent;
  }
- .container{
+.buttons{
   border: 2px solid #075985;
-
+ }
+ .container{
+  border: 2px solid #494848;
+  border-radius: 9px;
+  
+}
+.container:hover{
+   border: 2px solid #075985;
+  background-color: #075985;
+  transition: ease;
  }
 form .input {
   border: 2px solid #075985;

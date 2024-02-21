@@ -17,7 +17,7 @@ export default function Home() {
     return (
       <div className='Container flex justify-between h-50vh mt-36' key={item.id}>
 
-        <div className=' icons ml-12 translate-y-28'>
+        <div className=' iconss ml-12 translate-y-28'>
           <a href="https://web.facebook.com/byiringiro.aimefils">  <FaFacebook className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
           <a href="https://www.linkedin.com/in/byiringiro-aime-fils-281609296/">  <FaLinkedinIn className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
           <a href="https://linkbio.co/byiringiroaimefils"> <FaTwitter className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>

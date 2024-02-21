@@ -35,17 +35,17 @@ export default function Contct() {
             <img src={Photo} alt="" className='w-80' />
           </div>
 
-          <div className='flex mt-10'>
-            <FaEnvelope className='w-16 animate-bounce hover:text-sky-700' />
-            <FaFacebook className='w-16 animate-bounce hover:text-sky-700' />
-            <FaInstagram className='w-16 animate-bounce hover:text-sky-700' />
-            <FaTwitter className='w-16 animate-bounce hover:text-sky-700' />
-            <FaLinkedinIn className='w-16 animate-bounce hover:text-sky-700' />
-          </div><br />
-          <p className='text-center'> BYIRINGIRO Aime Fils</p>
+          {/* <p className='text-center'> BYIRINGIRO Aime Fils</p> */}
         </div>
-
       </div>
+          <div className='flex mt-16 justify-center'>
+            <FaEnvelope className='w-16  hover:text-sky-700' />
+            <FaFacebook className='w-16  hover:text-sky-700' />
+            <FaInstagram className='w-16  hover:text-sky-700' />
+            <FaTwitter className='w-16  hover:text-sky-700' />
+            <FaLinkedinIn className='w-16  hover:text-sky-700' />
+          </div><br />
+          <p className='text-center text-gray-300'>copyright 2023 coding with aime9088 </p>
     </div >
   )
 }

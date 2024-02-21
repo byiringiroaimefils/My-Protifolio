@@ -86,6 +86,7 @@ form .input {
   padding-left: 5px;
 }
 
+
 @keyframes cursor {
   50% {
     border-color: transparent;
@@ -99,7 +100,7 @@ form .input {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px){
   nav {
     padding-bottom: 4px;
   }
@@ -143,9 +144,9 @@ form .input {
     margin-left: 30px;
   }
 
-  .icons {
+  .iconss {
     position: fixed;
-    bottom: 20%;
+    bottom: 45%;
     right: 20px;
   }
   .Dowmload{

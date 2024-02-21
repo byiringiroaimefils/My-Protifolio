@@ -23,8 +23,8 @@ export default function Project() {
       </div>
 {/* dd */}
       <div className='animation1 containers grid justify-center grid-cols-3 gap-y-7 ml-10 mt-10 mb-10' >
-        <div className='container fit w-96 p-2  rounded-sm cursor-pointer transition-colors duration-300' data-aos="fade-right" >
-          <img src={Photo} alt="" className="w-96" />
+        <div className='container fit  p-2  rounded-sm cursor-pointer transition-colors duration-300' data-aos="fade-right" >
+          <img src={Photo} alt="" className="" />
           <label className="font-bold">Kira Clinic</label>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <h6>Computer Languages</h6>
@@ -36,7 +36,7 @@ export default function Project() {
         </div>
 
         <div className='container fit w-96 p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300' data-aos="zoom-in" >
-          <img src={Photo1} alt="" className="w-96" />
+          <img src={Photo1} alt="" className="" />
           <label className="font-bold"> Nike Shoes Collection</label>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <h6>Computer Languages</h6>
@@ -48,7 +48,7 @@ export default function Project() {
         </div>
 
         <div className='container fit w-96 p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300'data-aos="fade-left">
-          <img src={Photo2} alt="" className="w-96" />
+          <img src={Photo2} alt="" className="" />
           <label className="font-bold">My Portifolio</label>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <h6>Computer Languages</h6>
@@ -61,7 +61,7 @@ export default function Project() {
         </div>
 
         <div className='container fit w-96 p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300' data-aos="fade-right">
-          <img src={Photo3} alt="" className="w-96" />
+          <img src={Photo3} alt="" className="" />
           <label className="font-bold">Age Calculator Web App</label>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <h6>Computer Language</h6>
@@ -73,7 +73,7 @@ export default function Project() {
         </div>
 
         <div className='container fit w-96 p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300'data-aos="zoom-in">
-          <img src={Photo4} alt="" className="w-96" />
+          <img src={Photo4} alt="" className="" />
           <label className="font-bold">History of Flower Collection</label>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
           <h6>Computer Language</h6>

@@ -15,24 +15,24 @@ export default function Contct() {
         <p className='text-sm font-thin '>My life depends on coding ,Programing and being updates on new Version.</p>
       </div>
 
-      <div className='centered-container flex justify-center order-2  mt-8 gap-20  '>
-        <div className='' data-aos="fade-left">
+      <div className='centered-container flex justify-center order-2  mt-8   '>
+        <div className='form' data-aos="fade-left">
           <h3 className=' font-extrabold'>Get  In Touch</h3>
           <p className='text-sm'>I'm here for you! How can I help you.</p> <br />
           <form action="">
             <label htmlFor="">USERNAME</label><br />
-            <input type="text" placeholder='Ex: aimefils' className='input  w-96 h-8 bg-black outline-none' /> <br />
+            <input type="text" placeholder='Ex: aimefils' className='input   h-8 bg-black outline-none' /> <br />
             <label htmlFor="">EMAIL</label><br />
-            <input type="email" placeholder='email@gmail.com' className='input  w-96 h-8  bg-black outline-none' /> <br />
+            <input type="email" placeholder='email@gmail.com' className='input  h-8  bg-black outline-none' /> <br />
             <label htmlFor="">MESSAGE</label>  <br />
-            <textarea name="" id="" placeholder='Message' cols="30" rows="10" className='input w-96   bg-black outline-sky-900'></textarea> <br />
-            <button className='Dowmload CV bg-sky-700 rounded p-1 text-xs w-96 h-8'>Submit</button>
+            <textarea name="" id="" placeholder='Message' cols="30" rows="10" className='input   bg-black outline-sky-900'></textarea> <br />
+            <button className='button Dowmload CV bg-sky-700 rounded p-1 text-xs w-96 h-8'>Submit</button>
           </form>
         </div><br />
 
         <div className=' mt-16' data-aos="fade-right">
           <div>
-            <img src={Photo} alt="" className='w-80' />
+            <img src={Photo} alt="" className='w-80   ' />
           </div>
 
           {/* <p className='text-center'> BYIRINGIRO Aime Fils</p> */}

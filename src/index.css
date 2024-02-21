@@ -9,6 +9,7 @@
 body {
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 .Dark {
@@ -69,9 +70,15 @@ button:hover{
 .buttons{
   border: 2px solid #075985;
  }
+
  .container{
   border: 2px solid #494848;
-  border-radius: 9px;
+  border-radius: 9px; 
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   
 }
 .container:hover{
@@ -86,6 +93,9 @@ form .input {
   padding-left: 5px;
 }
 
+.form,input,textarea,.button{
+  width: 55%;
+}
 
 @keyframes cursor {
   50% {
@@ -162,7 +172,80 @@ form .input {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
+    /* margin-right: 20px; */
+  
+  }
+  .container img{
+    width: 100%;
+  } 
+  .form,input,textarea,.button{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  nav {
+    padding-bottom: 4px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 60px;
+    display: none;
+
+  }
+
+  ul.open {
+    display: flex;
+  }
+
+  .None {
+    display: none;
+  }
+
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .Font {
+    margin-left: 30px;
+  }
+
+  .iconss {
+    position: fixed;
+    bottom: 45%;
+    right: 20px;
+  }
+  .Dowmload{
+    margin-right: 15px;
+  }
+  
+  .footer {
+    display: none;
+  }
+
+  .containers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 20px; */
   }
   .container img{
     

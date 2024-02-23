@@ -22,6 +22,9 @@ export default function Achivement() {
           </div>
         ))}
       </div>
+      <div className='flex justify-start ml-20 mb-10'>
+      <button className='buttonss Dowmload CV bg-sky-700 rounded p-1 text-xs w-40 h-8'>More</button>
+      </div>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import data from "./Data";
 import AboutMe from './AboutMe'
 import Project from './Project'
 import Contactme from "./Contact";
+import Achivement from "./Achivement.jsx";
 import { FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa"
 
 export default function Home() {
@@ -52,6 +53,9 @@ export default function Home() {
 
       <div className="mt-32" >
         <Project />
+      </div>
+      <div className="mt-32" >
+        <Achivement />
       </div>
 
       <div className="mt-32 mb-7" >

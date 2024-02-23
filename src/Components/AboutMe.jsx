@@ -49,7 +49,7 @@ export default function AboutMe() {
             <img src={terms.Illust} alt='' className='w-5 m-2'  />
             <img src={terms.version} alt='' className='w-5 m-2'  />
             </div> <br />
-            <button className='Dowmload CV bg-sky-700 rounded p-2 text-xs'>Dowmload CV</button>
+            <button className='Dowmload  CV buttonss bg-sky-700 rounded p-2 text-xs'>Dowmload CV</button>
           </div>
         </div>
       </div>

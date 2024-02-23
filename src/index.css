@@ -7,7 +7,7 @@
   margin: 0;
 }
 body {
-  background-color: black;
+  background-color: #020811;
   color: white;
   overflow-x: hidden;
 }
@@ -59,11 +59,11 @@ h2 {
   border: 2px solid #075985;
   padding: 1px;
 }
-button:hover{
+/* button:hover{
  border: 1px solid #075985;
  background-color: transparent;
-}
-.button:hover{
+} */
+.buttonss:hover{
   border: 2px solid #075985;
   background-color: transparent;
  }
@@ -91,6 +91,7 @@ form .input {
   outline: none;
   border-radius: 5px;
   padding-left: 5px;
+  background-color: #020811;
 }
 
 .form,input,textarea,.button{
@@ -248,7 +249,6 @@ form .input {
     /* margin-right: 20px; */
   }
   .container img{
-    
     width: 100%;
   } 
 }

@@ -26,7 +26,7 @@ export default function Contct() {
             <input type="email" placeholder='email@gmail.com' className='input  h-8  bg-black outline-none' /> <br />
             <label htmlFor="">MESSAGE</label>  <br />
             <textarea name="" id="" placeholder='Message' cols="30" rows="10" className='input   bg-black outline-sky-900'></textarea> <br />
-            <button className='button Dowmload CV bg-sky-700 rounded p-1 text-xs w-96 h-8'>Submit</button>
+            <button className='buttonss Dowmload CV bg-sky-700 rounded p-1 text-xs w-40 h-8'>Submit</button>
           </form>
         </div><br />
 
@@ -37,15 +37,16 @@ export default function Contct() {
 
           {/* <p className='text-center'> BYIRINGIRO Aime Fils</p> */}
         </div>
-      </div>
-          <div className='flex mt-16 justify-center'>
-            <FaEnvelope className='w-16  hover:text-sky-700' />
-            <FaFacebook className='w-16  hover:text-sky-700' />
-            <FaInstagram className='w-16  hover:text-sky-700' />
-            <FaTwitter className='w-16  hover:text-sky-700' />
-            <FaLinkedinIn className='w-16  hover:text-sky-700' />
-          </div><br />
-          <p className='text-center text-gray-300'>copyright 2023 coding with aime9088 </p>
+      </div> <br />
+      <p  className=' text-center text-gray-300 text-base'>Follow Me </p>
+          <div className='flex  mt-2 justify-center'>
+            <FaEnvelope className='w-5  hover:text-sky-700' />
+            <FaFacebook className='w-5  hover:text-sky-700' />
+            <FaInstagram className='w-5  hover:text-sky-700' />
+            <FaTwitter className='w-5  hover:text-sky-700' />
+            <FaLinkedinIn className='w-5  hover:text-sky-700' />
+          </div> <br />
+          <p className='text-center text-gray-300'>&copy; Copyright 2024 Coding with aime9088 </p>
     </div >
   )
 }

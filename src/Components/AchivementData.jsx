@@ -6,7 +6,7 @@ const achivementData= [
     },
     {
         id: 2,
-        Image: 'Javascript Certificate.png', 
+        Image: 'Digital Skills Certificate.jpeg', 
         alt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit ipsum dolor. ",
     },
     {

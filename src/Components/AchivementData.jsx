@@ -11,7 +11,7 @@ const achivementData= [
     },
     {
         id: 3,
-        Image: 'Javascript Certificate.png', 
+        Image: 'Byiringiro_Aime_Fils20240226-72-1iwtq0i.jpg', 
         alt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit ipsum dolor.",
     },
 ]

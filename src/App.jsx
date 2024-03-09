@@ -7,6 +7,7 @@ import Project from './Components/Project'
 import Achivement from './Components/Achivement'
 import Contct from './Components/Contact'
 
+import { Analytics } from "@vercel/analytics/react"
 import { FaSun, FaBars } from "react-icons/fa";
 
 
@@ -80,6 +81,7 @@ function App() {
           </Routes>
         </main>
       </BrowserRouter>
+      <Analytics />
     </div>
   );
 }

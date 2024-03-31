@@ -25,18 +25,6 @@ h4 {
   position: relative;
   transform: translateY(-15px);
 }
-h4::after {
-  position: absolute;
-  content: 'A';
-  font-weight: bold;
-  height: 20px;
-  top: 4px;
-  right: 69px;
-  background-color: #075985;
-  padding-right: 6px;
-  padding: 2px 4px 4px 4px;
-  border-radius: 40%;
-}
 nav ul a {
   margin: 10px;
 }
@@ -46,7 +34,6 @@ h2 {
   font-weight: bolder;
   text-align: center;
   letter-spacing: 2px;
-  /* font-family: monospace; */
   border-right: 5px solid;
   width: 94%;
   margin-left: 20px;
@@ -63,10 +50,10 @@ h2 {
  border: 1px solid #075985;
  background-color: transparent;
 } */
-.buttonss:hover{
+/* .buttonss:hover{
   border: 2px solid #075985;
   background-color: transparent;
- }
+ } */
 .buttons{
   border: 2px solid #075985;
  }

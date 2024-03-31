@@ -1,5 +1,6 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import Logo from'./assets/logoipsum-245.svg'
 import './App.css'
 import Home from './Components/Home'
 import AboutMe from './Components/AboutMe'
@@ -36,7 +37,10 @@ function App() {
           <div className="flex justify-between ml-8 ">
             <div className="logo ml-6 translate-y-4  translate-x-2">
               <Link to="/">
+                <div className='flex h-6'>
+                <img src={Logo} alt="" className='translate-y-[-11px] translate-x-[-9px]'/>
                 <h4>aime9088</h4>
+                </div>
               </Link>
             </div>
 

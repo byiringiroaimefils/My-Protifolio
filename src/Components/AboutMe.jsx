@@ -1,6 +1,6 @@
 // import React from 'react'
 import Datas from '../Components/AboutmeData'
-import { FaEnvelope, FaAddressBook, FaPhone} from "react-icons/fa"
+// import { FaEnvelope, FaAddressBook, FaPhone} from "react-icons/fa"
 import {useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css"
@@ -28,14 +28,16 @@ export default function AboutMe() {
 
           <div className='animation1 flex  flex-col Font text-base' data-aos="fade-left" >
             <span className='text-lg font-bold hover:text-sky-700 transition-colors duration-300'>{terms.Greeting}</span>
-            <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe }} />
-            <FaEnvelope className='translate-y-5 text-sky-700'/> 
+            <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe }} /> <br />
+            <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe2 }} /> <br />
+            <p className='font-thin mt-2 mb-2' dangerouslySetInnerHTML={{ __html: terms.aboutMe3 }} /> <br />
+            {/* <FaEnvelope className='translate-y-5 text-sky-700'/> 
             <label className='font-semibold translate-x-5 '>aimefils173@gmail.com</label>
             <FaAddressBook className='translate-y-5 text-sky-700'/>
             <label className='font-semibold translate-x-5 '>Rubavu-Gisa</label>
             <FaPhone className='translate-y-5 text-sky-700'/>
-            <label className='font-semibold translate-x-5 '>0790154696</label>
-            <label> Computer Language and Skills </label>
+            <label className='font-semibold translate-x-5 '>0790154696</label> */}
+            {/* <label> Computer Language and Skills </label>
             <div className='flex'>
             <img src={terms.html} alt='' className='w-5 m-2' />
             <img src={terms.css} alt='' className='w-5 m-2' />
@@ -49,7 +51,7 @@ export default function AboutMe() {
             <img src={terms.Photoshop} alt='' className='w-5 m-2'  />
             <img src={terms.Illust} alt='' className='w-5 m-2'  />
             <img src={terms.version} alt='' className='w-5 m-2'  />
-            </div> <br />
+            </div> <br /> */}
             <button className='Dowmload  CV buttonss bg-sky-700 rounded p-2 text-xs '> <a href="/src/assets/Profile.pdf" download={CV}>Dowmload CV</a> </button>
           </div>
         </div>

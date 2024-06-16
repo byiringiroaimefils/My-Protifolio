@@ -170,7 +170,7 @@ form .input {
     width: 90%;
   }
 }
-
+/* 
 @media screen and (max-width: 400px){
   nav {
     padding-bottom: 4px;
@@ -233,9 +233,9 @@ form .input {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* margin-right: 20px; */
-  }
-  .container img{
+    margin-right: 20px;
+  } */
+  /* .container img{
     width: 100%;
   } 
-}
+} */

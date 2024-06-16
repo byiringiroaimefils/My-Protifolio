@@ -1,4 +1,4 @@
-import {useEffect } from 'react';
+import { useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -11,7 +11,7 @@ import { FaFacebook, FaLinkedinIn, FaTwitter } from "react-icons/fa"
 
 export default function Home() {
   useEffect(() => {
-    Aos.init({duration:2000})
+    Aos.init({ duration: 2000 })
   })
 
   const Users = data.map(item => {
@@ -42,12 +42,33 @@ export default function Home() {
   return (
     <div>
 
-      <div className='mt-28 translate-y-10' data-aos="zoom-in">
+      <div className='mt-28 translate-y-10 ' data-aos="zoom-in">
         {Users} <br /> <br /><br /><br /><br /> <br />
       </div>
 
       <div className='mt-28'>
         <AboutMe />
+      </div> <br /><br />
+      <div className='mt-28'>
+        <h5 className='text-center mt-6 font-extrabold '>MY SKILL</h5><br /><br />
+        <div className="boxes md:grid md:grid-cols-4 grid-cols-2 align-middle ml-44">
+
+          <div className="box border w-fit p-5 rounded">
+            <label htmlFor="">ReactJs</label>
+          </div>
+
+          <div className="box border w-fit p-5 rounded">
+            <label htmlFor="">ReactJs</label>
+          </div>
+
+          <div className="box border w-fit p-5 rounded">
+            <label htmlFor="">ReactJs</label>
+          </div>
+
+          <div className="box border w-fit p-5 rounded">
+            <label htmlFor="">ReactJs</label>
+          </div>
+        </div>
       </div> <br /><br />
 
 

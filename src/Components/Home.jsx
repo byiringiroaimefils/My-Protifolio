@@ -49,7 +49,7 @@ export default function Home() {
       <div className='mt-28'>
         <AboutMe />
       </div> <br /><br />
-      <div className='mt-28'>
+      {/* <div className='mt-28'>
         <h5 className='text-center mt-6 font-extrabold '>MY SKILL</h5><br /><br />
         <div className="boxes md:grid md:grid-cols-4 grid-cols-2 align-middle ml-44">
 
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
         </div>
       </div> <br /><br />
-
+ */}
 
       <div className="mt-32" >
         <Project />

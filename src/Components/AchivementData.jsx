@@ -1,18 +1,18 @@
 const achivementData= [
     {
         id: 1,
-        Image: 'Javascript Certificate.png', 
-        alt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit ipsum dolor.",
+        Image: 'wavumbuzi.jpeg', 
+        alt: "I attended in Wavumbuzi Enterpreneurship challenge 2024 (Edition 4)",
     },
     {
         id: 2,
-        Image: 'Digital Skills Certificate.jpeg', 
-        alt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit ipsum dolor. ",
+        Image: 'Web Development_certificate (1).jpg', 
+        alt: "I was a huge Milestone to complete Web development course with SoloLearn  ",
     },
     {
         id: 3,
         Image: 'Byiringiro_Aime_Fils20240226-72-1iwtq0i.jpg', 
-        alt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit ipsum dolor.",
+        alt: "The complition of Reactjs course with Great Learn by sharpen skills and Knowledge",
     },
 ]
 

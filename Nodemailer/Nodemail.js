@@ -8,7 +8,7 @@ const Port=3000;
 const transporter = nodemailer.createTransport({
   service: "Gmail", 
   auth: {
-    user: "mygmail@gmail.com",
+    user: "aimefils173@gmail.com",
     pass: "password"
   }
 });
@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 app.get('/', (req, res) => {
   const mailOptions = {
-    to: req.body.to,
+    from: req.body.from,
     subject: req.body.subject,
     mess: req.body.message
   };

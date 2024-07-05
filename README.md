@@ -1,2 +1,2 @@
 
-This is my Profile more about me with React js and Tailwind css.
+This is my Profile more abouts me with React js and Tailwind css.

@@ -18,7 +18,7 @@ export default function Home() {
     return (
       <div className='Container flex justify-between h-50vh mt-36' key={item.id}>
 
-        <div className=' iconss ml-12 translate-y-28'>
+        <div className='iconss ml-12 translate-y-28'>
           <a href="https://web.facebook.com/byiringiro.aimefils">  <FaFacebook className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
           <a href="https://www.linkedin.com/in/byiringiro-aime-fils-281609296/">  <FaLinkedinIn className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
           <a href="https://linkbio.co/byiringiroaimefils"> <FaTwitter className='m-2 hover:text-sky-700 transition-colors duration-300 cursor-pointer' /></a>
@@ -49,29 +49,6 @@ export default function Home() {
       <div className='mt-28'>
         <AboutMe />
       </div> <br /><br />
-      {/* <div className='mt-28'>
-        <h5 className='text-center mt-6 font-extrabold '>MY SKILL</h5><br /><br />
-        <div className="boxes md:grid md:grid-cols-4 grid-cols-2 align-middle ml-44">
-
-          <div className="box border w-fit p-5 rounded">
-            <label htmlFor="">ReactJs</label>
-          </div>
-
-          <div className="box border w-fit p-5 rounded">
-            <label htmlFor="">ReactJs</label>
-          </div>
-
-          <div className="box border w-fit p-5 rounded">
-            <label htmlFor="">ReactJs</label>
-          </div>
-
-          <div className="box border w-fit p-5 rounded">
-            <label htmlFor="">ReactJs</label>
-          </div>
-        </div>
-      </div> <br /><br />
- */}
-
       <div className="mt-32" >
         <Project />
       </div>

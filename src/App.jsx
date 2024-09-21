@@ -1,6 +1,6 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import Logo from'./assets/logoipsum-245.png'
+import Logo from './assets/logoipsum-245.png'
 import './App.css'
 import Home from './Components/Home'
 import AboutMe from './Components/AboutMe'
@@ -38,8 +38,8 @@ function App() {
             <div className="logo ml-6 translate-y-4  translate-x-2">
               <Link to="/">
                 <div className='flex h-6'>
-                <img src={Logo} alt="" className='translate-y-[-11px] translate-x-[-10px] translate-y-[-15px]'/>
-                <h4 className='md:block'>aime9088</h4>
+                  <img src={Logo} alt="" className='translate-y-[-11px] translate-x-[-10px] translate-y-[-15px]' />
+                  <h4 className='md:block'>BYIRINGIRO</h4>
                 </div>
               </Link>
             </div>
@@ -65,13 +65,15 @@ function App() {
               <Link to="Contct">
                 <button className='buttons  p-1 text-sm  rounded-lg font-extrabold '>Contact me</button>
               </Link>
-              <div className='translate-y-1 ml-5'>
-                <FaSun className='cursor-pointer hover:text-sky-700' onClick={handlethemeswitch} />
+              <div className='translate-y-1 ml-5' onClick={handlethemeswitch}>
+                {handlethemeswitch ? `${<FaSun className='cursor-pointer hover:text-sky-700' />}` : `${<FaSun className='cursor-pointer hover:text-sky-700' />}`}
               </div>
             </div>
-            <  FaBars className="FaBars lg:hidden  mt-3 ml-6 mr-7 white cursor-pointer" onClick={() => {
-              SetopenLink(!openLink);
-            }} />
+            <div onClick={() => {SetopenLink(!openLink);}}>
+            {openLink ? `${<  FaBars className="FaBars lg:hidden  mt-3 ml-6 mr-7 white cursor-pointer"  />}` : `${<FaSun className='cursor-pointer hover:text-sky-700' />}`}
+            
+              
+            </div>
           </div>
         </header>
 

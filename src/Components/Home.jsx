@@ -31,8 +31,8 @@ export default function Home() {
         <div className='mt-24 text-center font-bold lg:mr-32'>
           <h2>{item.Greeting}</h2>
           <h5 className='text-xs font-thin mb-2 tracking-widest animate-pulse '>{item.Name}</h5>
-          <div className="line w-80 h-1 bg-sky-800 rounded"></div>
-          <p className='text-sm mt-1 ' dangerouslySetInnerHTML={{ __html: item.Description }} />
+          <div className="line w-90 h-1 bg-sky-800 rounded"></div>
+          <p className='text-xl mt-1 ' dangerouslySetInnerHTML={{ __html: item.Description }} />
         </div>
 
       </div>

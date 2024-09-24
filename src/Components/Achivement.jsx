@@ -14,7 +14,7 @@ export default function Achivement() {
         <h3 className='hover:text-sky-700 transition-colors duration-300 text-lg font-semibold' >ACHIVEMENT</h3>
         <p className='text-sm font-thin '>My life depends on coding ,Programing and being updates on new Version.</p>
       </div>
-      <div className="Container flex gap-10 justify-center mt-10 mb-10" data-aos="zoom-in">
+      <div className="Container grid grid-cols-3 gap-10 justify-center mt-10 ml-5 mb-10" data-aos="zoom-in">
         {achivementData.map(item => (
           <div className="text-white " key={item.id}>
             <img src={item.Image} className="w-96" />

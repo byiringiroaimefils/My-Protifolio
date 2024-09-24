@@ -36,7 +36,7 @@ export default function Project() {
         </div>
         <div className='container fit w-full p-2 hover:bg-sky-800 cursor-pointer transition-colors duration-300' data-aos="fade-right">
           <img src={Photo3} alt="" className="" />
-          <label className="font-bold">BABY STORY</label>
+          <label className="font-bold">IsoMere</label>
           <p>Beatiful web Application wher childern can improve art of reading.</p>
           <h6>Computer Language</h6>
           <p className="text-sm font-extrabold">MERN STACK Development</p><br />

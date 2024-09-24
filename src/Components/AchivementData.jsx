@@ -17,7 +17,7 @@ const achivementData = [
     {
         id: 4,
         Image: '73-alx-aice-ai-career-essentials-certificate-byiringiro-aime-fils.png',
-        alt: "The complition of Reactjs course with Great Learn by sharpen skills and Knowledge",
+        alt: "I delivered a project in AI career essentials with ALX within 8 weeks",
     },
 ]
 

@@ -37,16 +37,16 @@ function App() {
             <nav className={`${openLink ? 'block  translate-y-[-20%] translate-x-10' : 'hidden'} md:flex space-x-6 transition-all duration-300`}>
               <ul className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
                 <Link className="hover:text-sky-700 transition-colors duration-300 text-sm font-semibold" to="/">
-                  HOME
+                  Home
                 </Link>
                 <Link className="hover:text-sky-700 transition-colors duration-300 text-sm font-semibold" to="/AboutMe">
-                  ABOUT ME
+                  About me
                 </Link>
                 <Link className="hover:text-sky-700 transition-colors duration-300 text-sm font-semibold" to="/Project">
-                  PROJECT
+                  Project
                 </Link>
                 <Link className="hover:text-sky-700 transition-colors duration-300 text-sm font-semibold" to="/Achievement">
-                  ACHIEVEMENT
+                  Achievement
                 </Link>
               </ul>
             </nav>

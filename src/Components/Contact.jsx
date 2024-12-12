@@ -1,61 +1,186 @@
-// import React from 'react'
-import { useEffect,useState } from 'react';
+import { useEffect, useState } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css"
 import Photo from '../assets/contact-me.png'
 import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa"
-export default function Contct() {
+
+export default function Contact() {
   useEffect(() => {
     Aos.init({ duration: 2000 })
   })
-  const[to,setTo]=useState('')
-  const[subject,setSubject]=useState('')
-  const[mess,setMess]=useState('')
 
-  const HndleSubmit=()=>{
-      console.log(to);
-      console.log(subject);
-      console.log(mess);
+  const [formData, setFormData] = useState({
+    email: '',
+    subject: '',
+    message: ''
+  })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
   }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
+    try {
+      // Add your form submission logic here
+      console.log(formData)
+      // Reset form after successful submission
+      setFormData({ email: '', subject: '', message: '' })
+      alert('Message sent successfully!')
+    } catch (error) {
+      console.error('Error sending message:', error)
+      alert('Failed to send message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
-    < div className='CONTACTME' >
-      <div className='text-center pt-5'>
-        <h3 className='hover:text-sky-700 transition-colors duration-300 text-lg font-semibold ' >CONTACT ME</h3>
-        <p className='text-sm font-thin '>My life depends on coding ,Programing and being updates on new Version.</p>
-      </div>
+    <div className='bg-white dark:bg-gray-900 py-16' id="contact">
+      <div className='max-w-7xl mx-auto px-4'>
+        <div className='text-center mb-16'>
+          <h3 className='text-2xl font-bold mb-2 '>
+            Get In Touch
+          </h3>
+          <div className="w-24 h-1 bg-gradient-to-r from-sky-600 to-indigo-600 rounded-full mx-auto mb-6"></div>
+          <p className='text-gray-600 dark:text-gray-400 max-w-2xl mx-auto'>
+            I'm always interested in hearing about new projects and opportunities. 
+            Feel free to reach out if you'd like to connect!
+          </p>
+        </div>
 
-      <div className='centered-container flex justify-center order-2  mt-8   '>
-        <div className='form' data-aos="fade-left">
-          <h3 className=' font-extrabold'>Get  In Touch</h3>
-          <p className='text-sm'>I'm here for you How can I help you.</p> <br />
-          <form action="" onSubmit={HndleSubmit}>
-            <label htmlFor="">EmailL</label><br />
-            <input type="email" placeholder='your email' className='input  h-8  bg-black outline-none' value={to} onChange={(e)=>{setTo(e.target.value)}} /> <br />
-            <label htmlFor="">Subject</label><br />
-            <input type="text" placeholder='Subject' className='input   h-8 bg-black outline-none' value={subject} onChange={(e)=>{setSubject(e.target.value)}} /> <br />
-            <label htmlFor="">MESSAGE</label>  <br />
-            <textarea name="" id="" placeholder='Message' cols="30" rows="10" className='input   bg-black outline-sky-900' value={mess} onChange={(e)=>{setMess(e.target.value)}}></textarea> <br />
-            <button className='buttonss Dowmload CV bg-sky-700 rounded p-1 text-xs w-40 h-8'>Submit</button>
-          </form>
-        </div><br />
+        <div className='grid lg:grid-cols-2 gap-16 items-center'>
+          <div className='order-2 lg:order-1' data-aos="fade-right">
+            <form onSubmit={handleSubmit} className='space-y-6'>
+              <div>
+                <label htmlFor="email" className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'>
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className='w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-sky-600 focus:border-transparent transition-colors duration-200'
+                  placeholder='your@email.com'
+                />
+              </div>
 
-        <div className=' mt-16' data-aos="fade-right">
-          <div>
-            <img src={Photo} alt="" className='w-80   ' />
+              <div>
+                <label htmlFor="subject" className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'>
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                  className='w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-sky-600 focus:border-transparent transition-colors duration-200'
+                  placeholder='What is this about?'
+                />
+              </div>
+
+              <div>
+                <label htmlFor="message" className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'>
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows="6"
+                  className='w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-sky-600 focus:border-transparent transition-colors duration-200 resize-none'
+                  placeholder='Your message here...'
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className='w-full px-6 py-3 bg-gradient-to-r from-sky-600 to-indigo-600 text-white rounded-lg hover:shadow-lg hover:shadow-sky-600/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed'
+              >
+                {isSubmitting ? 'Sending...' : 'Send Message'}
+              </button>
+            </form>
           </div>
 
-          {/* <p className='text-center'> BYIRINGIRO Aime Fils</p> */}
+          <div className='order-1 lg:order-2' data-aos="fade-left">
+            <div className='relative'>
+              <div className='absolute -inset-4 bg-gradient-to-r from-sky-600 to-indigo-600 rounded-full blur-3xl opacity-30 animate-pulse'></div>
+              <img 
+                src={Photo} 
+                alt="Contact illustration" 
+                className='relative w-full max-w-md mx-auto drop-shadow-2xl rounded-2xl'
+              />
+            </div>
+          </div>
         </div>
-      </div> <br />
-      <p  className=' text-center text-gray-300 text-base'>Follow Me </p>
-          <div className='flex  mt-2 justify-center'>
-            <FaEnvelope className='w-5  hover:text-sky-700' />
-            <FaFacebook className='w-5  hover:text-sky-700' />
-            <FaInstagram className='w-5  hover:text-sky-700' />
-            <FaTwitter className='w-5  hover:text-sky-700' />
-            <FaLinkedinIn className='w-5  hover:text-sky-700' />
-          </div> <br />
-          <p className='text-center text-gray-300'>&copy; Copyright 2024 Coding with aime9088 </p>
-    </div >
+
+        <div className='translate-y-32 text-center'>
+          <h3 className='text-xl font-semibold text-gray-900 dark:text-white mb-6'>
+            Connect with Me
+          </h3>
+          <div className='flex justify-center gap-6 mb-8'>
+            <a 
+              href="mailto:your.email@example.com" 
+              className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope />
+            </a>
+            <a 
+              href="https://web.facebook.com/byiringiro.aimefils" 
+              className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook />
+            </a>
+            <a 
+              href="#" 
+              className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a 
+              href="https://linkbio.co/byiringiroaimefils" 
+              className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/byiringiro-aime-fils-281609296/" 
+              className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
+          </div>
+          
+          <p className='text-sm text-gray-500 dark:text-gray-400'>
+            &copy; {new Date().getFullYear()} Coding with aime9088. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
   )
 }

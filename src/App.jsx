@@ -13,12 +13,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 function App() {
   const [openLink, setOpenLink] = useState(false);
-
-  // Ensure the mobile menu is closed initially
-  useEffect(() => {
-    setOpenLink(false);
-  }, []);
-
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <div>
       <BrowserRouter>

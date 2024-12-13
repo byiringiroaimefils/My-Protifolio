@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css"
 import Photo from '../assets/contact-me.png'
-import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+import {FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa"
 
 export default function Contact() {
   useEffect(() => {
@@ -130,26 +130,10 @@ export default function Contact() {
         </div>
 
         <div className='translate-y-32 text-center'>
-          <h3 className='text-xl font-semibold text-gray-900 dark:text-white mb-6'>
+          <h4 className='text-xl font-semibold text-gray-900 dark:text-white mb-6'>
             Connect with Me
-          </h3>
-          <div className='flex justify-center gap-6 mb-8'>
-            <a 
-              href="mailto:your.email@example.com" 
-              className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaEnvelope />
-            </a>
-            <a 
-              href="https://web.facebook.com/byiringiro.aimefils" 
-              className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook />
-            </a>
+          </h4>
+          <div className='flex justify-center gap-6 mb-4'>
             <a 
               href="#" 
               className='text-2xl text-gray-600 hover:text-sky-600 transition-colors duration-300'
@@ -177,7 +161,7 @@ export default function Contact() {
           </div>
           
           <p className='text-sm text-gray-500 dark:text-gray-400'>
-            &copy; {new Date().getFullYear()} Coding with aime9088. All rights reserved.
+            &copy; {new Date().getFullYear()} Coding with aime173@gmail.com. All rights reserved.
           </p>
         </div>
       </div>

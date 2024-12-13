@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
+import { About as Datas } from './Basedata';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Datas from './AboutmeData';
 import CV from "../assets/Profile.pdf";
 import { FaDownload, FaCode, FaLaptopCode, FaServer, FaPalette } from 'react-icons/fa';
 
@@ -51,7 +51,7 @@ export default function AboutMe() {
                       data-aos="fade-up"
                       data-aos-delay={index * 100}
                     >
-                      <div className="text-sky-600 text-xl mb-2">
+                      <div className="text-sky-600 text-xl mb-4">
                         {skill.icon}
                       </div>
                       <h4 className="font-semibold text-gray-900 dark:text-white mb-1">

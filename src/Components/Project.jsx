@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 import Photo from "../assets/DashBoard.jpeg";
-import Photo1 from "../assets/Nike.png";
+// import Photo1 from "../assets/Nike.png";
 import Photo2 from "../assets/Profile.png";
 import Photo3 from "../assets/age.png";
-import Photo4 from "../assets/Kirclinic.png";
-// import React from 'react'
+// import Photo4 from "../assets/Kirclinic.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css"
@@ -18,9 +17,14 @@ export default function Project() {
 
   return (
     <div>
+      <div></div>
       <div className="text-center">
         <h3 className='text-2xl font-bold mb-2'>My Projects</h3>
-        <div className="w-24 h-1 bg-sky-600 mx-auto rounded-full mb-10"></div>
+        <div className="w-24 h-1 bg-sky-600 mx-auto rounded-full"></div>
+        <p className='text-gray-600 dark:text-gray-400 max-w-2xl mx-auto'>
+          I'm always interested in hearing about new projects and opportunities.
+          Feel free to reach out if you'd like to connect!
+        </p> <br />
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 max-w-7xl mx-auto'>
         <div className='group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2' data-aos="fade-up">
@@ -86,7 +90,7 @@ export default function Project() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div className="p-6">
-            <h4 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">MY PORTFOLIO</h4>
+            <h4 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">My Portifolio</h4>
             <p className="text-gray-600 dark:text-gray-300 mb-4">My professional profile showcasing all my information and achievements.</p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-3 py-1 bg-sky-100 text-sky-600 rounded-full text-sm">React.js</span>
@@ -106,7 +110,7 @@ export default function Project() {
           </div>
         </div>
 
-        <div className='group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2' data-aos="fade-up" data-aos-delay="300">
+        {/* <div className='group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2' data-aos="fade-up" data-aos-delay="300">
           <div className="relative overflow-hidden">
             <img src={Photo1} alt="" className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -131,6 +135,7 @@ export default function Project() {
             </div>
           </div>
         </div>
+
 
         <div className='group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2' data-aos="fade-up" data-aos-delay="400">
           <div className="relative overflow-hidden">
@@ -157,7 +162,9 @@ export default function Project() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
+
+
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaTrophy, FaExternalLinkAlt } from 'react-icons/fa';
-import achivementData from "./AchivementData";
+import { achivementData } from "./Basedata";
 
 export default function Achievement() {
   useEffect(() => {

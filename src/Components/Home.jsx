@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css"
+import { Profile as data } from "./Basedata";
 
-import data from "./Data";
+// Pages.
 import AboutMe from './AboutMe'
 import Project from './Project'
 import Contactme from "./Contact";

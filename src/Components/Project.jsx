@@ -110,7 +110,7 @@ export default function Project() {
           </div>
         </div>
 
-        {/* <div className='group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2' data-aos="fade-up" data-aos-delay="300">
+         <div className='group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2' data-aos="fade-up" data-aos-delay="300">
           <div className="relative overflow-hidden">
             <img src={Photo1} alt="" className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -143,8 +143,8 @@ export default function Project() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <div className="p-6">
-            <h4 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">KIRA CLINIC</h4>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">Healthcare management system with modern interface.</p>
+            <h4 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">Star War Unevirsal </h4>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">Star War unevirsel UX/UI design Challenge</p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="px-3 py-1 bg-sky-100 text-sky-600 rounded-full text-sm">HTML</span>
               <span className="px-3 py-1 bg-sky-100 text-sky-600 rounded-full text-sm">CSS</span>
@@ -162,7 +162,7 @@ export default function Project() {
               </a>
             </div>
           </div>
-        </div> */}
+        </div> 
 
 
       </div>

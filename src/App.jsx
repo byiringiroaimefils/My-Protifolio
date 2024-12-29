@@ -46,7 +46,7 @@ function App() {
               </ul>
             </nav>
 
-            {/* Contact Button and Theme Switch */}
+        
             <div className="hidden md:flex items-center space-x-6">
               <Link to="/Contact">
                 <button className="bg-blue-500 text-white px-4 py-2 rounded-lg font-bold text-sm">

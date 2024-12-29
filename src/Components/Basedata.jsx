@@ -24,6 +24,11 @@ export const achivementData = [
         Image: 'Byiringiro_Aime_Fils20240226-72-1iwtq0i.jpg',
         alt: "The completion of Reactjs course with Great Learn by sharpen skills and Knowledge",
     },
+    {
+        id: 5,
+        Image: 'Php.png',
+        alt: "The completion of Php Learning basics.",
+    },
 ]
 
 export const Profile = [

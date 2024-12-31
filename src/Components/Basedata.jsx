@@ -2,12 +2,12 @@ export const achivementData = [
     {
         id: 1,
         Image: 'wavumbuzi.jpeg',
-        alt: "I attended in Wavumbuzi Enterpreneurship challenge 2024 (Edition 4)",
+        alt: "It was incredable opportuninty to participate in Wavumbuzi Enterpreneurship challenge 2024 (Edition 4)",
     },
     {
         id: 4,
         Image: '73-alx-aice-ai-career-essentials-certificate-byiringiro-aime-fils.png',
-        alt: "I delivered a project in AI career essentials with ALX within 8 weeks",
+        alt: "It's sound great to complete AI career essentials with ALX within 8 weeks where we transformed in digital lives",
     },
     {
         id: 2,

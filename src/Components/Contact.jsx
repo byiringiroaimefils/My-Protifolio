@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css"
 import Photo from '../assets/contact-me.png'
-import {FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+import {FaInstagram, FaLinkedinIn, FaTwitter, FaCheckCircle } from "react-icons/fa"
 
 export default function Contact() {
   useEffect(() => {
@@ -14,7 +14,8 @@ export default function Contact() {
     subject: '',
     message: ''
   })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [result, setResult] = React.useState("");
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -26,19 +27,44 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setIsSubmitting(true)
     
+    setResult("Sending....");
+    const formData = new FormData(e.target);
+
+    formData.append("access_key", "2970fb62-6888-4a71-a921-0aa3234a856a");
+
     try {
-      // Add your form submission logic here
-      console.log(formData)
-      // Reset form after successful submission
-      setFormData({ email: '', subject: '', message: '' })
-      alert('Message sent successfully!')
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setShowSuccess(true);
+        setResult("Message Sent Successfully!");
+        
+        // Reset form
+        setFormData({
+          email: '',
+          subject: '',
+          message: ''
+        });
+
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          setShowSuccess(false);
+          setResult("");
+        }, 5000);
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+        setShowSuccess(false);
+      }
     } catch (error) {
-      console.error('Error sending message:', error)
-      alert('Failed to send message. Please try again.')
-    } finally {
-      setIsSubmitting(false)
+      setResult("Failed to send message. Please try again.");
+      setShowSuccess(false);
     }
   }
 
@@ -46,7 +72,7 @@ export default function Contact() {
     <div className='bg-white dark:bg-gray-900 py-16' id="contact">
       <div className='max-w-7xl mx-auto px-4'>
         <div className='text-center mb-16'>
-          <h3 className='text-2xl font-bold mb-2 '>
+          <h3 className='text-2xl font-bold mb-2'>
             Get In Touch
           </h3>
           <div className="w-24 h-1 bg-gradient-to-r from-sky-600 to-indigo-600 rounded-full mx-auto mb-6"></div>
@@ -58,8 +84,25 @@ export default function Contact() {
 
         <div className='grid lg:grid-cols-2 gap-16 items-center'>
           <div className='order-2 lg:order-1' data-aos="fade-right">
+            {showSuccess && (
+              <div className='flex items-center justify-center p-4 mb-6 bg-green-100 dark:bg-green-900 rounded-lg transition-all duration-300 ease-in-out'>
+                <FaCheckCircle className="text-green-500 dark:text-green-400 text-xl mr-2" />
+                <span className='text-green-700 dark:text-green-300 font-medium'>
+                  {result}
+                </span>
+              </div>
+            )}
+            {!showSuccess && result && (
+              <div className='flex justify-center items-center mt-5 mb-10'>
+                <h3 className='text-gray-600 dark:text-gray-400 text-center'>
+                  {result}
+                </h3>
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className='space-y-6'>
               <div>
+              <input type="hidden" name="replyto" value="custom@gmail.com" />
                 <label htmlFor="email" className='block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2'>
                   Email Address
                 </label>
@@ -109,10 +152,9 @@ export default function Contact() {
 
               <button
                 type="submit"
-                disabled={isSubmitting}
                 className='w-full px-6 py-3 bg-gradient-to-r from-sky-600 to-indigo-600 text-white rounded-lg hover:shadow-lg hover:shadow-sky-600/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed'
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                Send Message
               </button>
             </form>
           </div>

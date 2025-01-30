@@ -99,5 +99,3 @@ Contributions, issues, and feature requests are welcome!
 - Vercel Platform
 - All Open Source Contributors
 
----
-Made with ❤️ by BYIRINGIRO Aime Fils
